@@ -92,11 +92,12 @@ jupyter>=1.0.0
 
 ## 👤 Author
 
-**Abdullah**
-- GitHub: [@yourusername](https://github.com/yourusername)
+**Muhammad Abdullah**
+- GitHub: [@yourusername](https://github.com/abdullah123-collab)
 
 ---
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
