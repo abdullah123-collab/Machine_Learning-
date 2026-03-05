@@ -12,7 +12,8 @@ Machine_Learning/
 ├── Basics/                                        # Core ML concepts & fundamentals
 │
 ├── Supervised_Learning_Algorithms/
-│   ├── Classification/                            # 🔜 Coming Soon
+│   ├── Classification/
+│   │   └── SVM/                                   # ✅ Titanic Dataset                 
 │   └── Regression/
 │       └── Logistic_Regression/                   # ✅ Iris Dataset
 │
@@ -28,6 +29,7 @@ Machine_Learning/
 | Algorithm | Category | Dataset | Accuracy | Status |
 |---|---|---|---|---|
 | Logistic Regression | Supervised / Regression | Iris | 93.33% | ✅ Done |
+| SVM (SVC) | Supervised / Classification | Titanic | 86.26% | ✅ Done |
 
 ---
 
@@ -48,7 +50,7 @@ Machine_Learning/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/Machine_Learning.git
+git clone https://github.com/abdullah123-collab/Machine_Learning-.git
 cd Machine_Learning
 ```
 
@@ -100,5 +102,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+
 
 
