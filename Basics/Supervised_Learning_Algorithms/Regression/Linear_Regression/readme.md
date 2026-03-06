@@ -1,6 +1,8 @@
-# 📊 Linear Regression Projects
+# 📊 Linear Regression 
 
-Two end-to-end regression projects built with scikit-learn, covering disease progression prediction and house price estimation.
+Linear Regression is a machine learning algorithm that finds the best straight line through your data to predict a number. It learns the relationship between input features and an output value. 
+
+Two end-to-end regression example built with scikit-learn, covering disease progression prediction and house price estimation.
 
 ---
 
