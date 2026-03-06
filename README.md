@@ -15,6 +15,10 @@ Machine_Learning/
 │   ├── Classification/
 │   │   └── SVM/                                   # ✅ Titanic Dataset                 
 │   └── Regression/
+│       └── Linear_Regression/
+│       │   └── Diabetes_regression.ipynb/
+│       │   └── House_Pricing_Model .ipynb/                                              
+│
 │       └── Logistic_Regression/                   # ✅ Iris Dataset
 │
 ├── Unsupervised_Learning/                         # 🔜 Coming Soon
@@ -30,6 +34,9 @@ Machine_Learning/
 |---|---|---|---|---|
 | Logistic Regression | Supervised / Regression | Iris | 93.33% | ✅ Done |
 | SVM (SVC) | Supervised / Classification | Titanic | 86.26% | ✅ Done |
+| Linear Regression | Supervised / Regression | Diabetes | R² = 45.26% | ✅ Done |
+| Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
+
 
 ---
 
@@ -102,6 +109,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
