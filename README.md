@@ -36,6 +36,7 @@ Machine_Learning/
 | SVM (SVC) | Supervised / Classification | Titanic | 86.26% | ✅ Done |
 | Linear Regression | Supervised / Regression | Diabetes | R² = 45.26% | ✅ Done |
 | Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
+| Naive Bayes | Supervised / Classification | Email Spam | 96.86% | ✅ Done |
 
 
 
@@ -110,6 +111,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
