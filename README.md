@@ -13,12 +13,12 @@ Machine_Learning/
 │
 ├── Supervised_Learning_Algorithms/
 │   ├── Classification/
-│   │   └── SVM/                                   # ✅ Titanic Dataset                 
+│   │   └── SVM/                                   # ✅ Titanic Dataset
+│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection            
 │   └── Regression/
 │       └── Linear_Regression/
 │       │   └── Diabetes_regression.ipynb/
 │       │   └── House_Pricing_Model .ipynb/                                              
-│
 │       └── Logistic_Regression/                   # ✅ Iris Dataset
 │
 ├── Unsupervised_Learning/                         # 🔜 Coming Soon
@@ -36,6 +36,7 @@ Machine_Learning/
 | SVM (SVC) | Supervised / Classification | Titanic | 86.26% | ✅ Done |
 | Linear Regression | Supervised / Regression | Diabetes | R² = 45.26% | ✅ Done |
 | Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
+
 
 
 ---
@@ -109,6 +110,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
