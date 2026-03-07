@@ -1,11 +1,5 @@
 # 📧 Email Spam Detection — Naive Bayes
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat&logo=python)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.2+-orange?style=flat&logo=scikit-learn)
-![Accuracy](https://img.shields.io/badge/Accuracy-96.86%25-brightgreen?style=flat)
-![ROC--AUC](https://img.shields.io/badge/ROC--AUC-0.9912-brightgreen?style=flat)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=flat)
-
 A clean Machine Learning project to classify emails as **Spam** or **Ham (Not Spam)** using **Complement Naive Bayes** with **TF-IDF** vectorization.
 
 ---
@@ -34,10 +28,8 @@ A clean Machine Learning project to classify emails as **Spam** or **Ham (Not Sp
 Naive_Bayes_Email_Spam/
 │
 ├── email.csv                  ← Dataset (place in same folder)
-├── spam_detection.py          ← Main Python script
 ├── spam_detection.ipynb       ← Jupyter Notebook (step-by-step)
 ├── spam_model.pkl             ← Saved trained model (auto-generated)
-├── requirements.txt           ← Python dependencies
 └── README.md
 ```
 
@@ -58,19 +50,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 How to Run
-
-**Option A — Python Script**
-```bash
-python spam_detection.py
-```
-
-**Option B — Jupyter Notebook**
-```bash
-jupyter notebook spam_detection.ipynb
-```
-
----
 
 ## 🧠 Model Details
 
@@ -105,33 +84,3 @@ Result : ✅ Ham   |  Spam: 1.4%   Ham: 98.6%
 ```
 
 ---
-
-## 📦 Requirements
-
-```
-pandas>=1.5.0
-numpy>=1.23.0
-scikit-learn>=1.2.0
-matplotlib>=3.6.0
-seaborn>=0.12.0
-joblib>=1.2.0
-jupyter>=1.0.0
-```
-
-Install all at once:
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 👤 Author
-
-**Abdullah**
-> Machine Learning → Supervised Learning → Classification → Naive Bayes
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
