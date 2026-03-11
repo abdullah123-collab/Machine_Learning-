@@ -81,16 +81,6 @@ The following tools and libraries are used in this project:
 - Seaborn
 - Scikit-learn
 
----
-
-# Datasets Used
-Some example datasets used for experiments include:
-
-- Iris Dataset
-- Boston Housing Dataset
-- Custom datasets
-
----
 
 # Conclusion
 Regression and Classification are fundamental techniques in machine learning. Regression is used when the output is a **continuous number**, while classification is used when the output is a **category or class label**.
