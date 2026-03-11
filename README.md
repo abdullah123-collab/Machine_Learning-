@@ -14,7 +14,11 @@ Machine_Learning/
 ├── Supervised_Learning_Algorithms/
 │   ├── Classification/
 │   │   └── SVM/                                   # ✅ Titanic Dataset
-│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection            
+│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection
+│   │   └── KNN/                                   # ✅ Movies Raking
+│   │   └── DecisionTree/
+│       │   └── Diabetes_regression.ipynb/
+│       │   └── House_Pricing_Model .ipynb/                                         
 │   └── Regression/
 │       └── Linear_Regression/
 │       │   └── Diabetes_regression.ipynb/
@@ -44,18 +48,6 @@ Machine_Learning/
 
 ---
 
-## 🔜 Coming Soon
-
-| Algorithm | Category |
-|---|---|
-| Linear Regression | Supervised / Regression |
-| Support Vector Machine (SVM) | Supervised / Classification |
-| K-Nearest Neighbors (KNN) | Supervised / Classification |
-| Decision Tree | Supervised / Classification |
-| K-Means Clustering | Unsupervised |
-| Principal Component Analysis (PCA) | Unsupervised |
-
----
 
 ## 🚀 Getting Started
 
@@ -113,6 +105,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
