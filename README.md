@@ -39,6 +39,7 @@ Machine_Learning/
 | Naive Bayes | Supervised / Classification | Email Spam | 96.86% | ✅ Done |
 | KNN | Supervised / Classification | Movie Recommendation | 62.00% | ✅ Done |
 | Decision Tree | Supervised / Classification | Iris | 98.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Heart Disease | 78.80% | ✅ Done |
 
 
 ---
@@ -112,6 +113,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
