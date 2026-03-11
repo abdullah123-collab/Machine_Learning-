@@ -38,6 +38,7 @@ Machine_Learning/
 | Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
 | Naive Bayes | Supervised / Classification | Email Spam | 96.86% | ✅ Done |
 | KNN | Supervised / Classification | Movie Recommendation | 62.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Iris | 98.00% | ✅ Done |
 
 
 ---
@@ -111,6 +112,7 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
 
 
 
