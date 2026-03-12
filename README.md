@@ -14,7 +14,11 @@ Machine_Learning/
 ├── Supervised_Learning_Algorithms/
 │   ├── Classification/
 │   │   └── SVM/                                   # ✅ Titanic Dataset
-│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection            
+│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection
+│   │   └── KNN/                                   # ✅ Movies Raking
+│   │   └── DecisionTree/
+│       │   └── Diabetes_regression.ipynb/
+│       │   └── House_Pricing_Model .ipynb/                                         
 │   └── Regression/
 │       └── Linear_Regression/
 │       │   └── Diabetes_regression.ipynb/
@@ -37,23 +41,13 @@ Machine_Learning/
 | Linear Regression | Supervised / Regression | Diabetes | R² = 45.26% | ✅ Done |
 | Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
 | Naive Bayes | Supervised / Classification | Email Spam | 96.86% | ✅ Done |
-
+| KNN | Supervised / Classification | Movie Recommendation | 62.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Iris | 98.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Heart Disease | 78.80% | ✅ Done |
 
 
 ---
 
-## 🔜 Coming Soon
-
-| Algorithm | Category |
-|---|---|
-| Linear Regression | Supervised / Regression |
-| Support Vector Machine (SVM) | Supervised / Classification |
-| K-Nearest Neighbors (KNN) | Supervised / Classification |
-| Decision Tree | Supervised / Classification |
-| K-Means Clustering | Unsupervised |
-| Principal Component Analysis (PCA) | Unsupervised |
-
----
 
 ## 🚀 Getting Started
 
@@ -111,6 +105,10 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+
+
+
 
 
 
