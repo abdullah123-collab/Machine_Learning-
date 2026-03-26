@@ -1,23 +1,26 @@
-# 📊 Linear Regression 
+# 📊 Linear Regression
 
-Linear Regression is a machine learning algorithm that finds the best straight line through your data to predict a number. It learns the relationship between input features and an output value. 
+Linear Regression is a machine learning algorithm used to predict continuous values by fitting the best straight line through data. It models the relationship between input features and a numeric target.
 
-Two end-to-end regression example built with scikit-learn, covering disease progression prediction and house price estimation.
+This repository contains **three complete implementations**:
+- Two using **scikit-learn**
+- One built **from scratch using NumPy**
 
 ---
 
 ## 📋 Table of Contents
 
-- [1: Diabetes Disease Progression](#project-1-diabetes-disease-progression)
-- [2: House Price Prediction](#project-2-house-price-prediction)
+- [1: Diabetes Disease Progression (Sklearn)](#1-diabetes-disease-progression-sklearn)
+- [2: House Price Prediction (Sklearn)](#2-house-price-prediction-sklearn)
+- [3: Linear Regression From Scratch (NumPy)](#3-linear-regression-from-scratch-numpy)
 
 ---
 
-## 1: Diabetes Disease Progression
+## 1: Diabetes Disease Progression (Sklearn)
 
 **File:** `diabetes_regression.ipynb`
 
-### Dataset
+### 📌 Dataset
 
 | Property | Value |
 |----------|-------|
@@ -26,34 +29,31 @@ Two end-to-end regression example built with scikit-learn, covering disease prog
 | Features | 10 (`age`, `sex`, `bmi`, `bp`, `s1`–`s6`) |
 | Target | Continuous disease progression score |
 
-### Notebook Walkthrough
+### ⚙️ Workflow
 
-| Cell | Description |
-|------|-------------|
-| 1–2 | Import libraries and scikit-learn modules |
-| 3–5 | Load dataset, summary statistics, missing value check |
-| 6–8 | Target distribution, correlation heatmap, feature scatter plots |
-| 9–10 | Train/test split (80/20) and StandardScaler |
-| 11 | Train LinearRegression, display coefficients |
-| 12–13 | Predictions and evaluation metrics (MSE, RMSE, MAE, R²) |
-| 14–15 | Actual vs Predicted plot and residual analysis |
-| 16–17 | Feature importance chart and single-sample prediction |
+- Data loading and inspection  
+- Data visualization (distribution + correlations)  
+- Train/test split (80/20)  
+- Feature scaling using `StandardScaler`  
+- Model training using `LinearRegression`  
+- Evaluation using MSE, RMSE, MAE, R²  
+- Residual analysis and visualization  
 
-### Results
+### 📊 Results (Approx.)
 
-| Metric | Value (approx.) |
-|--------|-----------------|
+| Metric | Value |
+|--------|------|
 | RMSE | ~53–54 |
 | MAE | ~42–44 |
 | R² | ~0.50–0.55 |
 
 ---
 
-## 2: House Price Prediction
+## 2: House Price Prediction (Sklearn)
 
 **File:** `House_Pricing_Model_.ipynb`
 
-### Dataset
+### 📌 Dataset
 
 | Property | Value |
 |----------|-------|
@@ -62,29 +62,116 @@ Two end-to-end regression example built with scikit-learn, covering disease prog
 | Features | 8 (`MedInc`, `HouseAge`, `AveRooms`, etc.) |
 | Target | Median house value (in $100,000s) |
 
-### Notebook Walkthrough
+### ⚙️ Workflow
 
-| Cell | Description |
-|------|-------------|
-| 1–2 | Import libraries, load dataset into DataFrame |
-| 3–4 | Summary statistics, Median Income vs Price scatter plot |
-| 5–6 | Train/test split (80/20) and StandardScaler |
-| 7–8 | Train LinearRegression, display feature coefficients |
-| 9–10 | Predictions on train and test sets, MSE and R² scores |
-| 11 | Overfitting check (train MSE vs test MSE) |
-| 12–13 | Actual vs Predicted plot and residual plot |
-| 14–15 | Best fit line on MedInc feature, final Actual vs Predicted with reference line |
+- Data exploration and visualization  
+- Feature vs target analysis  
+- Train/test split (80/20)  
+- Feature scaling  
+- Model training using `LinearRegression`  
+- Evaluation using MSE and R²  
+- Overfitting check (train vs test performance)  
+- Visualization of predictions  
 
-### Results
+### 📊 Results (Approx.)
 
-| Metric | Value (approx.) |
-|--------|-----------------|
+| Metric | Value |
+|--------|------|
 | Train R² | ~0.61 |
 | Test R² | ~0.60 |
-| Overfitting | Minimal — model generalizes well |
+| Overfitting | Minimal (good generalization) |
 
 ---
 
-## License
+## 3: Linear Regression From Scratch (NumPy)
 
-Both projects are for educational purposes. Datasets are part of scikit-learn and available under the BSD license.
+**File:** `linear_regression_scratch.py`
+
+### 🧠 Overview
+
+This implementation builds Linear Regression **completely from scratch using NumPy**, without using scikit-learn for the model.
+
+### 🚀 Features
+
+- Batch Gradient Descent  
+- Mean Squared Error (MSE) Loss  
+- Manual weight and bias updates  
+- Training loss tracking  
+- Visualization of training curve  
+- Performance comparison with scikit-learn  
+- Prediction on unseen data  
+
+---
+
+### 📐 Mathematical Formulation
+
+- **Prediction:**  
+  `ŷ = Xw + b`
+
+- **Loss Function (MSE):**  
+  `L = (1/n) Σ (ŷ - y)²`
+
+- **Gradients:**  
+  - `dL/dw = (2/n) Xᵀ(ŷ - y)`  
+  - `dL/db = (2/n) Σ(ŷ - y)`
+
+- **Update Rule:**  
+  - `w = w - α * dL/dw`  
+  - `b = b - α * dL/db`
+
+---
+
+### ⚙️ Workflow
+
+- Load dataset (`load_diabetes`)  
+- Train/test split (80/20)  
+- Feature scaling (important for gradient descent)  
+- Train custom model using gradient descent  
+- Evaluate using MSE and R²  
+- Compare results with scikit-learn model  
+- Generate visualizations:
+  - Training loss curve  
+  - Actual vs predicted values  
+  - Scratch vs sklearn predictions  
+
+---
+
+### 📊 Output
+
+- Console logs of training progress  
+- Final comparison table:
+  - Scratch vs Scikit-learn performance  
+- Saved plot:  
+  `linear_regression_results.png`
+
+---
+
+### ✅ Key Insight
+
+The scratch implementation produces results **very close to scikit-learn**, proving correctness of:
+- Gradient calculations  
+- Optimization process  
+- Model implementation  
+
+---
+
+## 🛠 Requirements
+
+```bash
+pip install numpy matplotlib scikit-learn
+```
+
+---
+
+## ▶️ How to Run
+
+```bash
+python linear_regression_scratch.py
+```
+
+---
+
+## 📌 License
+
+All projects are for educational purposes.  
+Datasets are provided by **scikit-learn** under the BSD license.
