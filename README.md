@@ -1,6 +1,6 @@
 # Machine Learning
 
-A structured repository covering Machine Learning algorithms implemented from scratch using Python and scikit-learn — organized by category for easy navigation.
+A structured repository covering Machine Learning algorithms implemented using Python and scikit-learn — organized by category for easy navigation and learning.
 
 ---
 
@@ -9,64 +9,83 @@ A structured repository covering Machine Learning algorithms implemented from sc
 ```
 Machine_Learning/
 │
-├── Basics/                                        # Core ML concepts & fundamentals
+├── Basics/
+│   ├── Supervised_Learning_Algorithms/
+│   │   ├── Regression/
+│   │   │   ├── Linear_Regression/
+│   │   │   │   ├── Diabetes_regression.ipynb
+│   │   │   │   └── House_Pricing_Model.ipynb
+│   │   │   └── Logistic_Regression/
+│   │   │       └── Iris_logistic_regression.ipynb
+│   │   └── Classification/
+│   │       ├── SVM/
+│   │       │   └── Titanic_svm.ipynb
+│   │       ├── Naive_Bayes/
+│   │       │   └── Spam_Email_naive_bayes.ipynb
+│   │       ├── KNN/
+│   │       │   └── Movie_Ranking_knn.ipynb
+│   │       └── DecisionTree/
+│   │           ├── Iris_decision_tree.ipynb
+│   │           └── Heart_Disease_decision_tree.ipynb
+│   │
+│   └── Comparing_Models/
+│       └── Diabetes/
+│           └── model_comparison.ipynb
 │
-├── Supervised_Learning_Algorithms/
-│   ├── Classification/
-│   │   └── SVM/                                   # ✅ Titanic Dataset
-│   │   └── Naive_Bayes/                           # ✅ Spam Email Detection
-│   │   └── KNN/                                   # ✅ Movies Raking
-│   │   └── DecisionTree/
-│       │   └── Diabetes_regression.ipynb/
-│       │   └── House_Pricing_Model .ipynb/                                         
-│   └── Regression/
-│       └── Linear_Regression/
-│       │   └── Diabetes_regression.ipynb/
-│       │   └── House_Pricing_Model .ipynb/                                              
-│       └── Logistic_Regression/                   # ✅ Iris Dataset
-│
-├── Unsupervised_Learning/                         # 🔜 Coming Soon
-│
-└── Projects/                                      # 🔜 End-to-end ML Projects
+└── Projects/                                      # 🔜 Coming Soon
 ```
 
 ---
 
 ## ✅ Completed
 
-| Algorithm | Category | Dataset | Accuracy | Status |
-|---|---|---|---|---|
-| Logistic Regression | Supervised / Regression | Iris | 93.33% | ✅ Done |
-| SVM (SVC) | Supervised / Classification | Titanic | 86.26% | ✅ Done |
-| Linear Regression | Supervised / Regression | Diabetes | R² = 45.26% | ✅ Done |
-| Linear Regression | Supervised / Regression | California Housing | R² = 57.58% | ✅ Done |
-| Naive Bayes | Supervised / Classification | Email Spam | 96.86% | ✅ Done |
-| KNN | Supervised / Classification | Movie Recommendation | 62.00% | ✅ Done |
-| Decision Tree | Supervised / Classification | Iris | 98.00% | ✅ Done |
-| Decision Tree | Supervised / Classification | Heart Disease | 78.80% | ✅ Done |
-
+| Algorithm | Category | Dataset | Metric | Score | Status |
+|---|---|---|---|---|---|
+| Linear Regression | Supervised / Regression | Diabetes | R² | 45.26% | ✅ Done |
+| Linear Regression | Supervised / Regression | California Housing | R² | 57.58% | ✅ Done |
+| Logistic Regression | Supervised / Classification | Iris | Accuracy | 93.33% | ✅ Done |
+| SVM (SVC) | Supervised / Classification | Titanic | Accuracy | 86.26% | ✅ Done |
+| Naive Bayes | Supervised / Classification | Email Spam | Accuracy | 96.86% | ✅ Done |
+| KNN | Supervised / Classification | Movie Recommendation | Accuracy | 62.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Iris | Accuracy | 98.00% | ✅ Done |
+| Decision Tree | Supervised / Classification | Heart Disease | Accuracy | 78.80% | ✅ Done |
+| Model Comparison | Supervised | Diabetes | R² | Multiple | ✅ Done |
 
 ---
 
+## 🔜 Coming Soon
+
+| Topic | Category | Status |
+|---|---|---|
+| Random Forest | Supervised / Classification | 🔜 Planned |
+| XGBoost | Supervised / Classification | 🔜 Planned |
+| K-Means Clustering | Unsupervised | 🔜 Planned |
+| DBSCAN | Unsupervised | 🔜 Planned |
+| End-to-end Project #1 | Projects | 🔜 Planned |
+
+---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
+
 ```bash
 git clone https://github.com/abdullah123-collab/Machine_Learning-.git
-cd Machine_Learning
+cd Machine_Learning-
 ```
 
 ### 2. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run any algorithm
+### 3. Run any notebook
+
 ```bash
-# Example: Logistic Regression
-cd Supervised_Learning_Algorithms/Regression/Logistic_Regression
-jupyter notebook logistic_regression.ipynb
+# Example: Linear Regression on Diabetes dataset
+cd Basics/Supervised_Learning_Algorithms/Regression/Linear_Regression
+jupyter notebook Diabetes_regression.ipynb
 ```
 
 ---
@@ -91,13 +110,23 @@ matplotlib>=3.7.0
 seaborn>=0.12.0
 scikit-learn>=1.3.0
 jupyter>=1.0.0
+xgboost>=1.7.0
 ```
+
+---
+
+## 📌 Notes
+
+- **Logistic Regression** is a *classification* algorithm despite the name — it predicts discrete class labels, not continuous values. It is placed under `Regression/` folder only for naming convention reasons.
+- The `Comparing_Models/` folder benchmarks multiple algorithms on the same dataset side by side.
+- All notebooks include data preprocessing, model training, evaluation metrics, and visualizations.
 
 ---
 
 ## 👤 Author
 
 **Muhammad Abdullah**
+
 - GitHub: [@abdullah123-collab](https://github.com/abdullah123-collab)
 
 ---
@@ -105,14 +134,3 @@ jupyter>=1.0.0
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-
-
-
-
-
-
-
-
-
-
