@@ -85,7 +85,7 @@ This repository contains **three complete implementations**:
 
 ## 3: Linear Regression From Scratch (NumPy)
 
-**File:** `linear_regression_scratch.py`
+**File:** `Linear_Regression(scratch).ipynb`
 
 ### 🧠 Overview
 
@@ -152,22 +152,6 @@ The scratch implementation produces results **very close to scikit-learn**, prov
 - Gradient calculations  
 - Optimization process  
 - Model implementation  
-
----
-
-## 🛠 Requirements
-
-```bash
-pip install numpy matplotlib scikit-learn
-```
-
----
-
-## ▶️ How to Run
-
-```bash
-python linear_regression_scratch.py
-```
 
 ---
 
