@@ -2,7 +2,7 @@
 
 > **Part of:** MACHINE_LEARNING → Basics → Ensemble_Methods
 
-Ensemble methods multiple models ko combine karke better predictions dete hain kisi bhi single model se.
+Ensemble methods combine multiple models to produce better predictions than any single model alone.
 
 ---
 
@@ -24,9 +24,9 @@ Ensemble_Methods/
 ## 📌 Techniques Covered
 
 ### 🟢 1. Bagging (Bootstrap Aggregating)
-- Models **parallel** train hote hain
-- Har model alag random subset pe train hota hai
-- Final prediction = **majority vote** (classification) ya **average** (regression)
+- Models are trained **in parallel**
+- Each model trains on a different **random subset** of data
+- Final prediction = **majority vote** (classification) or **average** (regression)
 - **Reduces: Variance**
 
 | Notebook | Topic |
@@ -36,8 +36,8 @@ Ensemble_Methods/
 ---
 
 ### 🔴 2. Boosting
-- Models **sequentially** train hote hain
-- Har model pichle ki **galtiyan fix** karta hai
+- Models are trained **sequentially**
+- Each new model **fixes the errors** of the previous one
 - **Reduces: Bias**
 
 | Notebook | Topic |
@@ -50,7 +50,7 @@ Ensemble_Methods/
 ### 🔵 3. Comparison
 | Notebook | Topic |
 |---|---|
-| `Comparison.ipynb` | All models ek dataset pe compare |
+| `Comparison.ipynb` | All models compared on the same dataset |
 
 ---
 
@@ -60,7 +60,7 @@ Ensemble_Methods/
 |---|---|---|---|---|
 | Bagging | Parallel | Variance | Fast | High variance models |
 | Random Forest | Parallel | Variance | Fast | General purpose |
-| XGBoost | Sequential | Bias | Medium | Structured/tabular data |
+| XGBoost | Sequential | Bias | Medium | Structured / tabular data |
 | LightGBM | Sequential | Bias | Very Fast | Large datasets |
 
 ---
@@ -75,7 +75,7 @@ Boosting:
   └── Tree 1 → Errors → Tree 2 (fix errors) → Errors → Tree 3 → Final Sum
 
 Random Forest vs XGBoost:
-  ├── RF: uncorrelated trees, parallel, reduces variance
+  ├── RF:  uncorrelated trees, parallel training, reduces variance
   └── XGB: sequential trees, gradient descent, reduces bias
 ```
 
@@ -89,22 +89,22 @@ pip install scikit-learn xgboost lightgbm matplotlib seaborn pandas numpy
 
 ---
 
-## 📚 Learning Order
+## 📚 Recommended Learning Order
 
 ```
-1️⃣  Random_Forest.ipynb   → Bagging concept samjho
-2️⃣  XGBoost.ipynb         → Boosting + industry standard
-3️⃣  LightGBM.ipynb        → Faster alternative
-4️⃣  Comparison.ipynb      → Sab ek saath compare karo
+1️⃣  Random_Forest.ipynb   → Understand the Bagging concept
+2️⃣  XGBoost.ipynb         → Boosting + industry standard algorithm
+3️⃣  LightGBM.ipynb        → Faster alternative to XGBoost
+4️⃣  Comparison.ipynb      → Compare all models together
 ```
 
 ---
 
 ## 🔗 Related Topics
 
-- [`Supervised_Learning_Algorithms/`](../Supervised_Learning_Algorithms/) — Base models
+- [`Supervised_Learning_Algorithms/`](../Supervised_Learning_Algorithms/) — Base models (Decision Tree, Logistic Regression)
 - [`Comparing_Models/`](../Comparing_Models/) — Model evaluation techniques
 
 ---
 
-> 💡 **Tip:** Ensemble methods real-world aur Kaggle competitions mein sabse zyada use hote hain. Random Forest se shuru karo, phir XGBoost try karo!
+> 💡 **Tip:** Ensemble methods are the most widely used algorithms in real-world projects and Kaggle competitions. Start with Random Forest, then move to XGBoost!
