@@ -106,5 +106,3 @@ pip install scikit-learn xgboost lightgbm matplotlib seaborn pandas numpy
 - [`Comparing_Models/`](../Comparing_Models/) — Model evaluation techniques
 
 ---
-
-> 💡 **Tip:** Ensemble methods are the most widely used algorithms in real-world projects and Kaggle competitions. Start with Random Forest, then move to XGBoost!
