@@ -28,6 +28,15 @@ Machine_Learning/
 │   │           ├── Iris_decision_tree.ipynb
 │   │           └── Heart_Disease_decision_tree.ipynb
 │   │
+│   ├── Ensemble_Methods/                          # 🆕 New
+│   │   ├── Bagging/
+│   │   │   └── Random_Forest.ipynb
+│   │   ├── Boosting/
+│   │   │   ├── XGBoost.ipynb
+│   │   │   └── LightGBM.ipynb
+│   │   ├── Comparison.ipynb
+│   │   └── README.md
+│   │
 │   └── Comparing_Models/
 │       └── Diabetes/
 │           └── model_comparison.ipynb
@@ -50,6 +59,8 @@ Machine_Learning/
 | Decision Tree | Supervised / Classification | Iris | Accuracy | 98.00% | ✅ Done |
 | Decision Tree | Supervised / Classification | Heart Disease | Accuracy | 78.80% | ✅ Done |
 | Model Comparison | Supervised | Diabetes | R² | Multiple | ✅ Done |
+| Random Forest | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
+| XGBoost | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
 
 ---
 
@@ -57,8 +68,8 @@ Machine_Learning/
 
 | Topic | Category | Status |
 |---|---|---|
-| Random Forest | Supervised / Classification | 🔜 Planned |
-| XGBoost | Supervised / Classification | 🔜 Planned |
+| LightGBM | Supervised / Ensemble | 🔜 Planned |
+| Ensemble Comparison | Supervised / Ensemble | 🔜 Planned |
 | K-Means Clustering | Unsupervised | 🔜 Planned |
 | DBSCAN | Unsupervised | 🔜 Planned |
 | End-to-end Project #1 | Projects | 🔜 Planned |
@@ -86,6 +97,10 @@ pip install -r requirements.txt
 # Example: Linear Regression on Diabetes dataset
 cd Basics/Supervised_Learning_Algorithms/Regression/Linear_Regression
 jupyter notebook Diabetes_regression.ipynb
+
+# Example: Random Forest
+cd Basics/Ensemble_Methods/Bagging
+jupyter notebook Random_Forest.ipynb
 ```
 
 ---
@@ -98,6 +113,8 @@ jupyter notebook Diabetes_regression.ipynb
 ![NumPy](https://img.shields.io/badge/NumPy-1.24-lightblue?logo=numpy)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7-red)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![XGBoost](https://img.shields.io/badge/XGBoost-1.7-blue)
+![LightGBM](https://img.shields.io/badge/LightGBM-4.0-brightgreen)
 
 ---
 
@@ -111,6 +128,7 @@ seaborn>=0.12.0
 scikit-learn>=1.3.0
 jupyter>=1.0.0
 xgboost>=1.7.0
+lightgbm>=4.0.0
 ```
 
 ---
@@ -119,6 +137,7 @@ xgboost>=1.7.0
 
 - **Logistic Regression** is a *classification* algorithm despite the name — it predicts discrete class labels, not continuous values. It is placed under `Regression/` folder only for naming convention reasons.
 - The `Comparing_Models/` folder benchmarks multiple algorithms on the same dataset side by side.
+- The `Ensemble_Methods/` folder covers Bagging and Boosting techniques including Random Forest, XGBoost, and LightGBM.
 - All notebooks include data preprocessing, model training, evaluation metrics, and visualizations.
 
 ---
