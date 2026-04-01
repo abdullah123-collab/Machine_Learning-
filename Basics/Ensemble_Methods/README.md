@@ -1,8 +1,8 @@
-# 🌲 Ensemble Methods
+# 📊 Ensemble Methods — Full Comparison
 
 > **Part of:** MACHINE_LEARNING → Basics → Ensemble_Methods
 
-Ensemble methods combine multiple models to produce better predictions than any single model alone.
+This section covers ensemble learning techniques — methods that combine multiple models to produce better predictions than any single model alone.
 
 ---
 
@@ -29,9 +29,9 @@ Ensemble_Methods/
 - Final prediction = **majority vote** (classification) or **average** (regression)
 - **Reduces: Variance**
 
-| Notebook | Topic |
-|---|---|
-| `Bagging/Random_Forest.ipynb` | Bagging + Random Forest + Feature Importance |
+| Notebook | Algorithm | Dataset | Accuracy |
+|---|---|---|---|
+| `Bagging/Random_Forest.ipynb` | Random Forest | Breast Cancer | — |
 
 ---
 
@@ -40,28 +40,29 @@ Ensemble_Methods/
 - Each new model **fixes the errors** of the previous one
 - **Reduces: Bias**
 
-| Notebook | Topic |
-|---|---|
-| `Boosting/XGBoost.ipynb` | XGBoost + Early Stopping + ROC Curve |
-| `Boosting/LightGBM.ipynb` | LightGBM + Leaf-wise Growth |
+| Notebook | Algorithm | Dataset | Accuracy |
+|---|---|---|---|
+| `Boosting/XGBoost.ipynb` | XGBoost | Breast Cancer | — |
+| `Boosting/LightGBM.ipynb` | LightGBM | Breast Cancer | — |
 
 ---
 
 ### 🔵 3. Comparison
-| Notebook | Topic |
+
+| Notebook | What it Covers |
 |---|---|
-| `Comparison.ipynb` | All models compared on the same dataset |
+| `Comparison.ipynb` | Accuracy, Precision, Recall, F1, AUC-ROC, Speed — all models side by side |
 
 ---
 
 ## ⚡ Quick Comparison
 
-| Method | Training | Reduces | Speed | Best For |
-|---|---|---|---|---|
-| Bagging | Parallel | Variance | Fast | High variance models |
-| Random Forest | Parallel | Variance | Fast | General purpose |
-| XGBoost | Sequential | Bias | Medium | Structured / tabular data |
-| LightGBM | Sequential | Bias | Very Fast | Large datasets |
+| Model | Type | Training | Reduces | Speed | Best For |
+|---|---|---|---|---|---|
+| Decision Tree | Baseline | Single | — | Fast | Interpretability |
+| Random Forest | Bagging | Parallel | Variance | Fast | General purpose |
+| XGBoost | Boosting | Sequential | Bias | Medium | Structured data |
+| LightGBM | Boosting | Sequential | Bias | **Very Fast** | Large datasets |
 
 ---
 
@@ -72,11 +73,35 @@ Bagging:
   └── Bootstrap samples → Train trees independently → Vote
 
 Boosting:
-  └── Tree 1 → Errors → Tree 2 (fix errors) → Errors → Tree 3 → Final Sum
+  └── Tree 1 → Errors
+             → Tree 2 (fix errors) → Errors
+                                   → Tree 3 → Final Sum
 
-Random Forest vs XGBoost:
-  ├── RF:  uncorrelated trees, parallel training, reduces variance
-  └── XGB: sequential trees, gradient descent, reduces bias
+XGBoost  → Level-wise tree growth
+LightGBM → Leaf-wise tree growth (faster, more accurate)
+```
+
+---
+
+## 🏆 Results Summary
+
+| Criteria | Winner |
+|---|---|
+| Best Accuracy | XGBoost / LightGBM |
+| Best AUC-ROC | XGBoost / LightGBM |
+| Fastest Training | LightGBM |
+| Most Interpretable | Decision Tree |
+| Best Overall | LightGBM |
+
+---
+
+## 📚 Recommended Learning Order
+
+```
+1️⃣  Bagging/Random_Forest.ipynb   → Understand Bagging & feature importance
+2️⃣  Boosting/XGBoost.ipynb        → Boosting + industry standard
+3️⃣  Boosting/LightGBM.ipynb       → Faster alternative + speed comparison
+4️⃣  Comparison.ipynb              → All models compared side by side
 ```
 
 ---
@@ -89,20 +114,11 @@ pip install scikit-learn xgboost lightgbm matplotlib seaborn pandas numpy
 
 ---
 
-## 📚 Recommended Learning Order
-
-```
-1️⃣  Random_Forest.ipynb   → Understand the Bagging concept
-2️⃣  XGBoost.ipynb         → Boosting + industry standard algorithm
-3️⃣  LightGBM.ipynb        → Faster alternative to XGBoost
-4️⃣  Comparison.ipynb      → Compare all models together
-```
-
----
-
 ## 🔗 Related Topics
 
-- [`Supervised_Learning_Algorithms/`](../Supervised_Learning_Algorithms/) — Base models (Decision Tree, Logistic Regression)
-- [`Comparing_Models/`](../Comparing_Models/) — Model evaluation techniques
+- [`Supervised_Learning_Algorithms/`](../Supervised_Learning_Algorithms/) — Base models (Decision Tree, SVM, KNN)
+- [`Comparing_Models/`](../Comparing_Models/) — Model evaluation on Diabetes dataset
 
 ---
+
+> 💡 **Tip:** Always compare models on the **same dataset** with the **same train/test split** for a fair evaluation. Ensemble methods consistently outperform single models on structured/tabular data.
