@@ -41,7 +41,7 @@ Machine_Learning/
 │       └── Diabetes/
 │           └── model_comparison.ipynb
 │
-└── Projects/                                      # 🔜 Coming Soon
+└── Projects/                                      
 ```
 
 ---
