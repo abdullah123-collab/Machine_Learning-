@@ -28,7 +28,7 @@ Machine_Learning/
 │   │           ├── Iris_decision_tree.ipynb
 │   │           └── Heart_Disease_decision_tree.ipynb
 │   │
-│   ├── Ensemble_Methods/                          # 🆕 New
+│   ├── Ensemble_Methods/                         
 │   │   ├── Bagging/
 │   │   │   └── Random_Forest.ipynb
 │   │   ├── Boosting/
