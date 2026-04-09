@@ -2,6 +2,7 @@
 
 A structured repository covering Machine Learning algorithms implemented using Python and scikit-learn — organized by category for easy navigation and learning.
 
+
 ---
 
 ## 📁 Repository Structure
