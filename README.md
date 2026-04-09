@@ -2,7 +2,7 @@
 
 A structured repository covering Machine Learning algorithms implemented using Python and scikit-learn — organized by category for easy navigation and learning.
 
-
+ii
 ---
 
 ## 📁 Repository Structure
@@ -29,7 +29,11 @@ Machine_Learning/
 │   │           ├── Iris_decision_tree.ipynb
 │   │           └── Heart_Disease_decision_tree.ipynb
 │   │
+<<<<<<< HEAD
 │   ├── Ensemble_Methods/                         
+=======
+│   ├── Ensemble_Methods/
+>>>>>>> 1341a2db899c67641292529f7c576a8b0845c1b6
 │   │   ├── Bagging/
 │   │   │   └── Random_Forest.ipynb
 │   │   ├── Boosting/
@@ -37,6 +41,12 @@ Machine_Learning/
 │   │   │   └── LightGBM.ipynb
 │   │   ├── Comparison.ipynb
 │   │   └── README.md
+│   │
+│   ├── Unsupervised_Learning/                     # 🔜 Coming Soon
+│   │   ├── KMeans/
+│   │   │   └── KMeans_clustering.ipynb
+│   │   └── DBSCAN/
+│   │       └── DBSCAN_clustering.ipynb
 │   │
 │   └── Comparing_Models/
 │       └── Diabetes/
@@ -62,6 +72,8 @@ Machine_Learning/
 | Model Comparison | Supervised | Diabetes | R² | Multiple | ✅ Done |
 | Random Forest | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
 | XGBoost | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
+| LightGBM | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
+| Ensemble Comparison | Supervised / Ensemble | Breast Cancer | Multiple | — | ✅ Done |
 
 ---
 
@@ -69,8 +81,6 @@ Machine_Learning/
 
 | Topic | Category | Status |
 |---|---|---|
-| LightGBM | Supervised / Ensemble | 🔜 Planned |
-| Ensemble Comparison | Supervised / Ensemble | 🔜 Planned |
 | K-Means Clustering | Unsupervised | 🔜 Planned |
 | DBSCAN | Unsupervised | 🔜 Planned |
 | End-to-end Project #1 | Projects | 🔜 Planned |
@@ -102,6 +112,18 @@ jupyter notebook Diabetes_regression.ipynb
 # Example: Random Forest
 cd Basics/Ensemble_Methods/Bagging
 jupyter notebook Random_Forest.ipynb
+
+# Example: XGBoost
+cd Basics/Ensemble_Methods/Boosting
+jupyter notebook XGBoost.ipynb
+
+# Example: LightGBM
+cd Basics/Ensemble_Methods/Boosting
+jupyter notebook LightGBM.ipynb
+
+# Example: Ensemble Comparison
+cd Basics/Ensemble_Methods
+jupyter notebook Comparison.ipynb
 ```
 
 ---
