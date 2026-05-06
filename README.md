@@ -75,6 +75,10 @@ Machine_Learning/
 | LightGBM | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
 | Ensemble Comparison | Supervised / Ensemble | Breast Cancer | Multiple | — | ✅ Done |
 
+
+## Projects
+
+
 ---
 
 ## 🔜 Coming Soon
