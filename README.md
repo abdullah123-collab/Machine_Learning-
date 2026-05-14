@@ -2,9 +2,8 @@
 
 A structured repository covering Machine Learning algorithms implemented using Python and scikit-learn — organized by category for easy navigation and learning.
 
-ii
 ---
-1234
+
 ## 📁 Repository Structure
 
 ```
@@ -29,11 +28,9 @@ Machine_Learning/
 │   │           ├── Iris_decision_tree.ipynb
 │   │           └── Heart_Disease_decision_tree.ipynb
 │   │
-<<<<<<< HEAD
 │   ├── Ensemble_Methods/                         
 =======
 │   ├── Ensemble_Methods/
->>>>>>> 1341a2db899c67641292529f7c576a8b0845c1b6
 │   │   ├── Bagging/
 │   │   │   └── Random_Forest.ipynb
 │   │   ├── Boosting/
