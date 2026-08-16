@@ -1,29 +1,126 @@
-# Machine Learning
+# 🤖 Machine Learning — Python & Scikit-Learn
 
-A structured repository covering Machine Learning algorithms implemented using Python and scikit-learn — organized by category for easy navigation and learning.
+> A structured Machine Learning repository containing practical implementations of supervised learning, classification, regression, ensemble methods, and model comparison using Python and Scikit-Learn.
+
+This repository documents my hands-on learning and implementation of **Machine Learning algorithms**, from fundamental supervised learning techniques to ensemble methods.
+
+Each implementation focuses on understanding the complete workflow:
+
+```text id="mlflow01"
+Dataset
+   ↓
+Data Preprocessing
+   ↓
+Feature Engineering
+   ↓
+Model Training
+   ↓
+Prediction
+   ↓
+Evaluation
+   ↓
+Model Comparison
+```
 
 ---
 
-## 📁 Repository Structure
+## 🧠 Machine Learning Topics
 
-```
-Machine_Learning/
+### Supervised Learning
+
+#### Regression
+
+* Linear Regression
+* Model evaluation using R²
+* Model comparison
+
+#### Classification
+
+* Logistic Regression
+* Support Vector Machine (SVM)
+* Naive Bayes
+* K-Nearest Neighbors (KNN)
+* Decision Trees
+
+### Ensemble Learning
+
+* Random Forest
+* XGBoost
+* LightGBM
+* Ensemble model comparison
+
+### Model Comparison
+
+The repository also includes experiments comparing multiple algorithms on the same dataset to understand their relative performance.
+
+---
+
+## 📊 Implemented Algorithms
+
+| Algorithm           | Type           | Dataset              | Evaluation       |
+| ------------------- | -------------- | -------------------- | ---------------- |
+| Linear Regression   | Regression     | Diabetes             | R²               |
+| Linear Regression   | Regression     | California Housing   | R²               |
+| Logistic Regression | Classification | Iris                 | Accuracy         |
+| SVM (SVC)           | Classification | Titanic              | Accuracy         |
+| Naive Bayes         | Classification | Email Spam           | Accuracy         |
+| KNN                 | Classification | Movie Recommendation | Accuracy         |
+| Decision Tree       | Classification | Iris                 | Accuracy         |
+| Decision Tree       | Classification | Heart Disease        | Accuracy         |
+| Random Forest       | Ensemble       | Breast Cancer        | Accuracy         |
+| XGBoost             | Ensemble       | Breast Cancer        | Accuracy         |
+| LightGBM            | Ensemble       | Breast Cancer        | Accuracy         |
+| Ensemble Comparison | Ensemble       | Breast Cancer        | Multiple Metrics |
+| Model Comparison    | Regression     | Diabetes             | Multiple Models  |
+
+---
+
+## 📈 Selected Results
+
+Some completed experiments include:
+
+| Experiment          | Dataset              |   Metric | Result |
+| ------------------- | -------------------- | -------: | -----: |
+| Linear Regression   | Diabetes             |       R² | 45.26% |
+| Linear Regression   | California Housing   |       R² | 57.58% |
+| Logistic Regression | Iris                 | Accuracy | 93.33% |
+| SVM                 | Titanic              | Accuracy | 86.26% |
+| Naive Bayes         | Email Spam           | Accuracy | 96.86% |
+| KNN                 | Movie Recommendation | Accuracy | 62.00% |
+| Decision Tree       | Iris                 | Accuracy | 98.00% |
+| Decision Tree       | Heart Disease        | Accuracy | 78.80% |
+
+> Results depend on preprocessing, feature selection, train/test split, and model configuration used in each notebook.
+
+---
+
+## 🗂️ Repository Structure
+
+```text id="mlstructure"
+Machine_Learning-/
 │
 ├── Basics/
+│   │
 │   ├── Supervised_Learning_Algorithms/
+│   │   │
 │   │   ├── Regression/
 │   │   │   ├── Linear_Regression/
 │   │   │   │   ├── Diabetes_regression.ipynb
 │   │   │   │   └── House_Pricing_Model.ipynb
+│   │   │   │
 │   │   │   └── Logistic_Regression/
 │   │   │       └── Iris_logistic_regression.ipynb
+│   │   │
 │   │   └── Classification/
 │   │       ├── SVM/
 │   │       │   └── Titanic_svm.ipynb
+│   │       │
 │   │       ├── Naive_Bayes/
 │   │       │   └── Spam_Email_naive_bayes.ipynb
+│   │       │
 │   │       ├── KNN/
 │   │       │   └── Movie_Ranking_knn.ipynb
+│   │       │
 │   │       └── DecisionTree/
 │   │           ├── Iris_decision_tree.ipynb
 │   │           └── Heart_Disease_decision_tree.ipynb
@@ -31,118 +128,193 @@ Machine_Learning/
 │   ├── Ensemble_Methods/
 │   │   ├── Bagging/
 │   │   │   └── Random_Forest.ipynb
+│   │   │
 │   │   ├── Boosting/
 │   │   │   ├── XGBoost.ipynb
 │   │   │   └── LightGBM.ipynb
+│   │   │
 │   │   ├── Comparison.ipynb
 │   │   └── README.md
 │   │
-│   ├── Unsupervised_Learning/                     # 🔜 Coming Soon
-│   │   ├── KMeans/
-│   │   │   └── KMeans_clustering.ipynb
-│   │   └── DBSCAN/
-│   │       └── DBSCAN_clustering.ipynb
+│   ├── Comparing_Models/
+│   │   └── Diabetes/
+│   │       └── model_comparison.ipynb
 │   │
-│   └── Comparing_Models/
-│       └── Diabetes/
-│           └── model_comparison.ipynb
+│   └── Unsupervised_Learning/
 │
-└── Projects/                                      
+└── Projects/
 ```
 
 ---
 
-## ✅ Completed
+## 🔬 What I Practice in These Notebooks
 
-| Algorithm | Category | Dataset | Metric | Score | Status |
-|---|---|---|---|---|---|
-| Linear Regression | Supervised / Regression | Diabetes | R² | 45.26% | ✅ Done |
-| Linear Regression | Supervised / Regression | California Housing | R² | 57.58% | ✅ Done |
-| Logistic Regression | Supervised / Classification | Iris | Accuracy | 93.33% | ✅ Done |
-| SVM (SVC) | Supervised / Classification | Titanic | Accuracy | 86.26% | ✅ Done |
-| Naive Bayes | Supervised / Classification | Email Spam | Accuracy | 96.86% | ✅ Done |
-| KNN | Supervised / Classification | Movie Recommendation | Accuracy | 62.00% | ✅ Done |
-| Decision Tree | Supervised / Classification | Iris | Accuracy | 98.00% | ✅ Done |
-| Decision Tree | Supervised / Classification | Heart Disease | Accuracy | 78.80% | ✅ Done |
-| Model Comparison | Supervised | Diabetes | R² | Multiple | ✅ Done |
-| Random Forest | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
-| XGBoost | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
-| LightGBM | Supervised / Ensemble | Breast Cancer | Accuracy | — | ✅ Done |
-| Ensemble Comparison | Supervised / Ensemble | Breast Cancer | Multiple | — | ✅ Done |
+The notebooks are focused on applying the standard machine learning workflow rather than only importing and training a model.
 
+### Data Preparation
 
-## Projects
+* Loading datasets
+* Understanding data
+* Data cleaning
+* Handling missing values where required
+* Feature and target selection
+* Train/test splitting
 
+### Feature Processing
+
+* Feature scaling
+* Encoding
+* Feature preparation
+* Basic feature engineering
+
+### Model Training
+
+* Selecting appropriate algorithms
+* Training models
+* Generating predictions
+* Comparing different approaches
+
+### Model Evaluation
+
+Depending on the problem, evaluation includes metrics such as:
+
+* Accuracy
+* R²
+* Model comparison
+* Classification performance analysis
 
 ---
 
-## 🔜 Coming Soon
+## 🌳 Ensemble Methods
 
-| Topic | Category | Status |
-|---|---|---|
-| K-Means Clustering | Unsupervised | 🔜 Planned |
-| DBSCAN | Unsupervised | 🔜 Planned |
-| End-to-end Project #1 | Projects | 🔜 Planned |
+The repository includes practical implementations of several ensemble learning techniques.
+
+### Bagging
+
+**Random Forest**
+
+Random Forest combines multiple decision trees to improve predictive performance and reduce overfitting compared with a single decision tree.
+
+### Boosting
+
+**XGBoost**
+
+Gradient boosting implementation widely used for structured/tabular machine learning problems.
+
+**LightGBM**
+
+A gradient boosting framework designed for efficient training on large datasets.
+
+### Ensemble Comparison
+
+The repository includes a comparison notebook for evaluating ensemble approaches on the same dataset.
+
+---
+
+## 🔎 Model Comparison
+
+Model comparison is an important part of this repository.
+
+Instead of assuming that one algorithm is always better, multiple models can be trained and evaluated on the same problem.
+
+```text id="compare01"
+Dataset
+   │
+   ├── Model A ──► Evaluation
+   │
+   ├── Model B ──► Evaluation
+   │
+   ├── Model C ──► Evaluation
+   │
+   └── Model D ──► Evaluation
+                    │
+                    ▼
+             Compare Results
+```
+
+This helps understand how different algorithms behave on the same dataset.
+
+---
+
+## 📚 Learning Roadmap
+
+### Completed
+
+* [x] Linear Regression
+* [x] Logistic Regression
+* [x] SVM
+* [x] Naive Bayes
+* [x] KNN
+* [x] Decision Trees
+* [x] Random Forest
+* [x] XGBoost
+* [x] LightGBM
+* [x] Model Comparison
+* [x] Ensemble Comparison
+
+### Next
+
+* [ ] K-Means Clustering
+* [ ] DBSCAN
+* [ ] More Unsupervised Learning
+* [ ] End-to-End Machine Learning Projects
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
-```bash
+```bash id="mlclone"
 git clone https://github.com/abdullah123-collab/Machine_Learning-.git
 cd Machine_Learning-
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
 
-```bash
+```bash id="mlinstall"
 pip install -r requirements.txt
 ```
 
-### 3. Run any notebook
+### 3. Launch Jupyter Notebook
 
-```bash
-# Example: Linear Regression on Diabetes dataset
-cd Basics/Supervised_Learning_Algorithms/Regression/Linear_Regression
-jupyter notebook Diabetes_regression.ipynb
+```bash id="mljupyter"
+jupyter notebook
+```
 
-# Example: Random Forest
-cd Basics/Ensemble_Methods/Bagging
-jupyter notebook Random_Forest.ipynb
+Then open any notebook from the repository.
 
-# Example: XGBoost
-cd Basics/Ensemble_Methods/Boosting
-jupyter notebook XGBoost.ipynb
+For example:
 
-# Example: LightGBM
-cd Basics/Ensemble_Methods/Boosting
-jupyter notebook LightGBM.ipynb
-
-# Example: Ensemble Comparison
-cd Basics/Ensemble_Methods
-jupyter notebook Comparison.ipynb
+```text id="mlexample"
+Basics/
+└── Supervised_Learning_Algorithms/
+    └── Regression/
+        └── Linear_Regression/
+            └── Diabetes_regression.ipynb
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3-orange?logo=scikit-learn)
-![Pandas](https://img.shields.io/badge/Pandas-2.0-green?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-1.24-lightblue?logo=numpy)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-3.7-red)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
-![XGBoost](https://img.shields.io/badge/XGBoost-1.7-blue)
-![LightGBM](https://img.shields.io/badge/LightGBM-4.0-brightgreen)
+| Technology       | Purpose                     |
+| ---------------- | --------------------------- |
+| Python           | Programming language        |
+| NumPy            | Numerical computing         |
+| Pandas           | Data manipulation           |
+| Matplotlib       | Data visualization          |
+| Seaborn          | Statistical visualization   |
+| Scikit-Learn     | Machine Learning            |
+| XGBoost          | Gradient boosting           |
+| LightGBM         | Gradient boosting           |
+| Jupyter Notebook | Interactive experimentation |
 
 ---
 
 ## 📦 Requirements
 
-```
+```text
 numpy>=1.24.0
 pandas>=2.0.0
 matplotlib>=3.7.0
@@ -155,23 +327,46 @@ lightgbm>=4.0.0
 
 ---
 
-## 📌 Notes
+## 🎯 Purpose
 
-- **Logistic Regression** is a *classification* algorithm despite the name — it predicts discrete class labels, not continuous values. It is placed under `Regression/` folder only for naming convention reasons.
-- The `Comparing_Models/` folder benchmarks multiple algorithms on the same dataset side by side.
-- The `Ensemble_Methods/` folder covers Bagging and Boosting techniques including Random Forest, XGBoost, and LightGBM.
-- All notebooks include data preprocessing, model training, evaluation metrics, and visualizations.
+This repository is part of my ongoing Machine Learning learning journey.
+
+The goal is to move from understanding individual algorithms to building complete machine learning systems involving:
+
+```text id="mljourney"
+Machine Learning Fundamentals
+          ↓
+Model Evaluation
+          ↓
+Model Comparison
+          ↓
+Feature Engineering
+          ↓
+End-to-End Projects
+          ↓
+Deployment
+```
+
+The repository will continue evolving as I work on more advanced machine learning concepts and practical projects.
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
 **Muhammad Abdullah**
 
-- GitHub: [@abdullah123-collab](https://github.com/abdullah123-collab)
+BSCS Student | Python | Data Science | Machine Learning
+
+GitHub: [@abdullah123-collab](https://github.com/abdullah123-collab)
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This repository is intended primarily as a learning and reference project.
+
+See the repository license for applicable terms.
+
+---
+
+⭐ **Building practical Machine Learning skills one algorithm and project at a time.**
